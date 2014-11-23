@@ -34,4 +34,15 @@ std(): Standard deviation
 
 For each activity and subject these variables were placed into one table. In the final step the mean of each of these variables for each activity and subject was calculated. Output file is 'tidydata.txt'  
 
+Activity: Describes the activity performed during the measurement of the variables
+		1 WALKING
+		2 WALKING_UPSTAIRS
+		3 WALKING_DOWNSTAIRS
+		4 SITTING
+		5 STANDING
+		6 LAYING
+
+Subject: Number of subject performing the activity.
+		1:30
+
 The complete list of variables of each feature vector is available in 'features_short.txt'
