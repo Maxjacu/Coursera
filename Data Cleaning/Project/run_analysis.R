@@ -48,5 +48,9 @@ for(i in 1:6){
 colnames(df.agg)<-colnames(df)
 
 write.table(df.agg, "tidydata.txt",row.name=FALSE) 
+<<<<<<< HEAD
+=======
+write.table(colnames(df), "features_short.txt",row.name=FALSE) 
+>>>>>>> origin/master
 
 
