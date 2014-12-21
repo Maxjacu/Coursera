@@ -1,5 +1,3 @@
-setwd("C:/Users/PC/Documents/Coding/Coursera/Exploratory Data Analyzis/Project 2")
-
 #Read data
 NEI  <- readRDS("summarySCC_PM25.rds")
 SCC  <- readRDS("Source_Classification_Code.rds")
