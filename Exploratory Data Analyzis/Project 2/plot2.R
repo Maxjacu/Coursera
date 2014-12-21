@@ -5,7 +5,8 @@ SCC  <- readRDS("Source_Classification_Code.rds")
 #Plot 2 : Have total emissions from PM2.5 decreased in the Baltimore City, 
 #         Maryland (fips == "24510") from 1999 to 2008?
 NEI.Baltimore <- NEI[NEI$fips == "24510",]
-barplot(t(sapply(split(NEI.Baltimore$Emissions, NEI.Baltimore$year), sum)), ylab="PM2.5 emission")
+barplot(t(sapply(split(NEI.Baltimore$Emissions, NEI.Baltimore$year), sum)), ylab="PM2.5 emissions", 
+        main="Baltimore,MD Emission trend 1999 - 2008")
 
 #Save to png
 dev.copy(png, file = "plot2.png")  ## Copy my plot to a PNG file
