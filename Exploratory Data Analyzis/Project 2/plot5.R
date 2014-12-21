@@ -10,6 +10,7 @@ NEI.B.mv <- NEI.B[NEI.B$SCC %in% SCC.mv,]
 barplot(t(sapply(split(NEI.B.mv$Emissions, NEI.B.mv$year), sum)), ylab="PM2.5 emission",
         main="USA Emission trend from mobile vehicles")
 
+
 #Save to png
 dev.copy(png, file = "plot5.png")  ## Copy my plot to a PNG file
 dev.off() 

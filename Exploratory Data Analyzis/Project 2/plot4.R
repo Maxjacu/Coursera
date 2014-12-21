@@ -7,7 +7,8 @@ SCC  <- readRDS("Source_Classification_Code.rds")
 SCC.coal <- as.vector(SCC$SCC[grepl("Coal", SCC$Short.Name)|grepl("Fuel Comb", SCC$Short.Name)])
 NEI.coal <- NEI[NEI$SCC %in% SCC.coal,]
 
-barplot(t(sapply(split(NEI.coal$Emissions, NEI.coal$year), sum)), ylab="PM2.5 emission",
+opt <- options("scipen" = 20)
+barplot(t(sapply(split(NEI.coal$Emissions, NEI.coal$year), sum)), ylab="PM2.5 Emissions (tons)",
         main="USA Emission trend from Coal Sources")
 
 #Save to png
